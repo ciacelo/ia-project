@@ -104,5 +104,31 @@ def sugestaoTrigrama(frase):
 
 #sugestaoBigrama("Thou mightst as")    
 
-print(sugestaoBigrama("What answer makes"))
-print(sugestaoTrigrama("And here I"))
+
+def menu():
+    print("+============+")
+    print("| SELELECIONE UM |")
+    print("| 1- Bigrama  |")
+    print("| 2- Trigrama |")
+    print("| 3- Sair    |")
+    print("+============+")
+    print()
+    Xgrama = int(input("-> "))
+
+    if(Xgrama == 1):
+        frase = input("Type your Phrase: ")
+        print(sugestaoBigrama(frase))
+
+    elif(Xgrama == 2):
+        frase = input("Type your Phrase: ")
+        print(sugestaoTrigrama(frase))
+
+    elif(Xgrama == 3):
+        print("Bye !!!")
+        
+    else:
+        print("Select a Number Between 1 - 3")
+
+menu()
+# print(sugestaoBigrama("What answer makes"))
+# print(sugestaoTrigrama("And here I"))   
